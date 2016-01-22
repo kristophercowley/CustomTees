@@ -21,8 +21,60 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4">
-				<h3>Register Here</h3>
-				<form>
+				<form class="form-horizontal">
+					<fieldset>
+						<h3>Register Here</h3>
+						<hr/>
+						<div class="form-group label-floating">
+							<label class="control-label" for="focusedInput2">First Name</label>
+							<input class="form-control" id="focusedInput2" type="text">
+							<p class="help-block">Please enter your first name</p>
+						</div>
+						<div class="form-group label-floating">
+							<label class="control-label" for="focusedInput2">Last Name</label>
+							<input class="form-control" id="focusedInput2" type="text">
+							<p class="help-block">Please enter your Last Name</p>
+						</div>
+						<div class="form-group label-floating">
+							<label class="control-label" for="focusedInput2">E-Mail</label>
+							<input class="form-control" id="focusedInput2" type="email">
+							<p class="help-block">yourname@example.com</p>
+						</div>
+						<div class="form-group label-floating">
+							<label class="control-label" for="focusedInput2">Password</label>
+							<input class="form-control" id="focusedInput2" type="password">
+							<p class="help-block">Use a combination of letters and numbers with at least one uppercase character</p>
+						</div>
+						<div class="form-group">
+							<div class="col-md-10 col-md-offset-2">
+								<button type="button" class="btn btn-default">Cancel</button>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				<hr/>
+				<h3>Already a member?</h3>
+				<h3>LOGIN</h3>
+				<fieldset>
+					<form class="form-horizontal">
+						<div class="form-group label-floating">
+							<label class="control-label" for="focusedInput2">E-Mail</label>
+							<input class="form-control" id="focusedInput2" type="email">
+							<p class="help-block">yourname@example.com</p>
+						</div>
+						<div class="form-group label-floating">
+							<label class="control-label" for="focusedInput2">Password</label>
+							<input class="form-control" id="focusedInput2" type="password">
+							<p class="help-block">Forget your password?</p>
+						</div>
+						<div class="form-group">
+							<div class="col-md-10 col-md-offset-2">
+								<button type="button" class="btn btn-default">Cancel</button>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+						<!--<form>
 					Name:
 					<input type="text" placeholder="name" id="name">
 					<br/> Email:
@@ -32,12 +84,16 @@
 					<br/>
 					<button onclick="register()">Register</button>
 					<br/>
+					<hr/>
 					<p>Already a member?</p>
 					<button type="button" onclick="login()">Login</button>
 				</form>
-				</form>
+				</form>-->
+					</form>
+				</fieldset>
 			</div>
-			<div class="col-sm-4"> <h1 class="cen">Custom T-Shirts</h1>
+			<div class="col-sm-4">
+				<h1 class="cen">Custom T-Shirts</h1>
 				<img class="cen" src="assets/img/T1.jpg" />
 				<select id="designsId">
 					<option>
@@ -55,7 +111,7 @@
 					</option>
 				</select>
 				<div>
-					<div >
+					<div>
 						<h3>Active Members</h3>
 						<ul id="members-list">
 
