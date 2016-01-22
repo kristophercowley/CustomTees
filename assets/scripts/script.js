@@ -67,11 +67,13 @@ function login() {
 //Designs and sizes arrays
 //Will contain design objects on refactor
 var designs = ["1", "Logo2", "Logo3", "Logo4", "Logo5", "Logo6", "Logo7", "Logo8", "Logo9", "Logo10"];
-var sizes = ["s","m","l","xl","xxl","xxxl"];
+var sizes = ["s","m","l","xl","xxl","xxxl"]
+var colors = ["White","Black","Blue","Red","Brown","Yellow","Green","Orange"]
 
 //Gets id for designs and sizes dropdowns
 var designsElem = document.getElementById('designsId');
 var sizesElem = document.getElementById('sizesId');
+var colorsElem = document.getElementById('colorsId');
 
 //Populates the sizes dropdown
 function popDrop(arr, elemId){
@@ -87,3 +89,4 @@ function popDrop(arr, elemId){
 
 popDrop(sizes, sizesElem);
 popDrop(designs, designsElem);
+popDrop(colors, colorsElem);
