@@ -68,6 +68,7 @@ function login() {
 //Will contain design objects on refactor
 var designs = ["1", "Logo2", "Logo3", "Logo4", "Logo5", "Logo6", "Logo7", "Logo8", "Logo9", "Logo10"];
 var sizes = ["s","m","l","xl","xxl","xxxl"];
+
 //Gets id for designs and sizes dropdowns
 var designsElem = document.getElementById('designsId');
 var sizesElem = document.getElementById('sizesId');
