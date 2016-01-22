@@ -64,15 +64,19 @@ function Member(name, email, password) {
 	this.password = password;
 	this.hasDiscount = false;
 }
-
+//Login Function
 function login() {
 
 }
 
-
+//Designs array
+//Will contain design objects on refactor
 var designs = ["1", "Logo2", "Logo3", "Logo4", "Logo5", "Logo6", "Logo7", "Logo8", "Logo9", "Logo10"];
+
+//Gets dropdown id
 var getButttonElem = document.getElementById('designId');
 
+//Populates the dropdown
 for (var i = 0; i < designs.length; i++) {
 	var current = designs[i];
 	var newElem = document.createElement('option');
