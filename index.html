@@ -1,0 +1,48 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Custom T-shirts</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text.css" href="assets/styles/style.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Register Here</h3>
+				<form>
+					Name:<input type="text" placeholder="name" id="name"> 
+					Email:<input type="email" placeholder="email" id="email" required="true"> 
+					Password:<input type="text" placeholder="password" id="password" >
+					<button onclick="register()">Register</button>
+					<p>Already a member?</p>
+					<button type="button" onclick="login()">Login</button>
+					</form>
+				</form>
+			</div>
+			<div class="col-sm-4" <h1 class="cen">Custom T-Shirts</h1>
+				<img class="cen" src="assets/img/T1.jpg" />
+
+				<div>
+					<div class="col-sm-4">
+						<h3>Active Members</h3>
+						<ul id="members-list">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
