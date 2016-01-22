@@ -66,5 +66,17 @@ function Member(name, email, password) {
 }
 
 function login() {
-	
+
+}
+
+
+var designs = ["1", "Logo2", "Logo3", "Logo4", "Logo5", "Logo6", "Logo7", "Logo8", "Logo9", "Logo10"];
+var getButttonElem = document.getElementById('designId');
+
+for (var i = 0; i < designs.length; i++) {
+	var current = designs[i];
+	var newElem = document.createElement('option');
+	newElem.textContent = current;
+	newElem.value = current;
+	getButttonElem.appendChild(newElem);
 }
