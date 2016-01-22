@@ -42,16 +42,10 @@ function register() {
 		memberPasswordElem.innerText = "Password: " + members[i].password;
 		membersListElem.appendChild(memberPasswordElem)
 	}
-
-
-
-
 	console.log(members)
 }
 
-
-
-
+//For refactor...
 // function clearForm() {
 // 	register.memberNameElem.value = "";
 // 	register.memberEmailElem.value = "";
@@ -64,23 +58,31 @@ function Member(name, email, password) {
 	this.password = password;
 	this.hasDiscount = false;
 }
+
 //Login Function
 function login() {
 
 }
 
-//Designs array
+//Designs and sizes arrays
 //Will contain design objects on refactor
 var designs = ["1", "Logo2", "Logo3", "Logo4", "Logo5", "Logo6", "Logo7", "Logo8", "Logo9", "Logo10"];
+var sizes = ["s","m","l","xl","xxl","xxxl"];
+//Gets id for designs and sizes dropdowns
+var designsElem = document.getElementById('designsId');
+var sizesElem = document.getElementById('sizesId');
 
-//Gets dropdown id
-var getButttonElem = document.getElementById('designId');
-
-//Populates the dropdown
-for (var i = 0; i < designs.length; i++) {
-	var current = designs[i];
-	var newElem = document.createElement('option');
-	newElem.textContent = current;
-	newElem.value = current;
-	getButttonElem.appendChild(newElem);
+//Populates the sizes dropdown
+function popDrop(arr, elemId){
+	var currentElem = elemId;
+	for (var i = 0; i < arr.length; i++) {
+		var current = arr[i];
+		var newElem = document.createElement('option');
+		newElem.textContent = current;
+		newElem.value = current;
+		currentElem.appendChild(newElem);
+	}
 }
+
+popDrop(sizes, sizesElem);
+popDrop(designs, designsElem);
